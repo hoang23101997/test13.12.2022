@@ -1,0 +1,136 @@
+body {
+position: absolute;
+width: 1213px;
+height: 830px;
+left: 193px;
+top: 173px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    padding: 100px;
+}
+.user-menu {
+    width: 1013px;
+    height: 128px;
+    align-items: flex-start;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 900;
+    font-family: 'Merriweather';
+}
+.users-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+position: relative;
+width: 327px;
+left: 0px;
+top: 0px;
+padding: 16px;
+border: 1px solid #BFC8E6;
+border-radius: 4px;
+}
+.search-bar::placeholder {
+    padding-left: 35px;
+}
+.users-search i {
+    position: absolute;
+    z-index: 1;
+    left: 118px;
+    font-size: 25px;
+}
+.user-menu nav ul {
+    display: flex;
+}
+.user-menu nav ul li {
+    list-style: none;
+}
+.user-menu nav ul li a {
+    font-weight: 500;
+    text-decoration: none;
+    color:#151B32;
+    font-size: 16px;
+    padding: 16px;
+}
+.new-users {
+background: #849FFF;
+border-radius: 8px;
+}
+.user-menu nav ul li a.new-users {
+    color: white;
+}
+.user-container {
+    margin-top: 70px;
+    display: grid; 
+    grid-template-columns: repeat(3, 327px);
+    gap: 16px;
+}
+.user{
+background: #FBFCFF;
+border-radius: 16px;
+padding: 24px;
+display: flex;
+}
+img {
+width: 97px;
+height: 97px;
+}
+.user-info {
+    margin-top: 24px;
+    margin-left: 16px;
+}
+.user-name {
+    font-size: 19px;
+    font-weight: 700;
+}
+.user-address {
+    font-weight: 500;
+}
+.user-hobbies ul {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 4px;
+}
+.user-hobbies ul li a{
+text-decoration: none;
+background: #FFFFFF;
+border: 1px solid #BFC8E6;
+border-radius: 10px;
+padding: 2px 8px;
+color: #516FD5;
+font-weight: 500;
+font-size: 12px;
+}
+#highlight {
+background: #FBFCFF;
+border: 1px solid #BFC8E6;
+box-shadow: 0px 8px 23px rgba(218, 224, 249, 0.7);
+border-radius: 16px;
+}
+
+@media only screen and (max-width: 850px) {
+    .body {
+        justify-content: center;
+    }
+    .user-container {
+        grid-template-columns: repeat(2, 327px);
+        gap: 16px;
+    }
+    .users-search {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .users-search nav {
+        margin-top: 10px;
+    }
+    .search-bar {
+        width: 638px;
+    }
+}
